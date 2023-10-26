@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "574486458383",
+    "project_id": "hihine-eb562",
+    "storage_bucket": "hihine-eb562.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574486458383:android:115706ad77c95dde88b37a",
+        "android_client_info": {
+          "package_name": "com.administrative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574486458383-mpo7dc5ulg6duq1sp9kmg3nr4sckp4qa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.administrative",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "574486458383-a0928n6m9c74nb503f7vcp3lqj0lldvs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzGHKE0kuPKoVFdRolVFYeGTaSvPSfGaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574486458383-a0928n6m9c74nb503f7vcp3lqj0lldvs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
