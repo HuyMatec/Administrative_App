@@ -13,6 +13,8 @@
     "@react-native-firebase/app": "^18.6.0",
     "@react-native-firebase/auth": "^18.6.0",
     "@react-native-google-signin/google-signin": "^10.1.0",
+    "@rneui/base": "^4.0.0-rc.8",
+    "@rneui/themed": "^4.0.0-rc.8",
     "react": "18.2.0",
     "react-native": "0.72.6",
     "react-native-device-info": "^10.11.0",
