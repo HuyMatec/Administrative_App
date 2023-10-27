@@ -1,0 +1,9 @@
+export enum routes {
+  SIGN_IN = 'SIGN_IN',
+
+  BOTTOM_TAB = 'BOTTOM_TAB',
+  HOME = 'HOME',
+  HISTORIES = 'HISTORIES',
+  CONTACTS = 'CONTACTS',
+  SETTINGS = 'SETTINGS',
+}
