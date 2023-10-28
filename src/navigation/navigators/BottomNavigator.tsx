@@ -9,6 +9,7 @@ import {Icon} from '@rneui/base';
 import {Text, makeStyles, normalize} from '@rneui/themed';
 import React, {FunctionComponent} from 'react';
 import {TouchableOpacity, View} from 'react-native';
+import {NavigationService} from '../NavigationService';
 
 const BottomTabs = createBottomTabNavigator();
 
@@ -20,23 +21,22 @@ const screenOptions: BottomTabNavigationOptions = {
 const choseIcon = (route: routes) => {
   switch (route) {
     case routes.HOME:
-      return 'home';
+      return 'home-sharp';
     case routes.HISTORIES:
-      return 'id-card';
+      return 'refresh-sharp';
     case routes.CONTACTS:
-      return 'people';
+      return 'call-sharp';
     case routes.SETTINGS:
-      return 'chatbubble-ellipses';
+      return 'settings-sharp';
     default:
-      return 'home';
+      return 'home-sharp';
   }
 };
 
-const useStyles = makeStyles(({colors}) => ({
+const useStyles = makeStyles(() => ({
   container: {
     flexDirection: 'row',
     height: normalize(56),
-    backgroundColor: colors.background,
     justifyContent: 'space-around',
     shadowColor: '#000',
     shadowOffset: {
@@ -100,13 +100,13 @@ const BottomNavigator: FunctionComponent = () => {
               <Icon
                 name={choseIcon(route.name as routes)}
                 type="ionicon"
-                color={isFocused ? '#2D5381' : 'gray'}
+                color={isFocused ? '#2D5381' : '#a6a6a6'}
                 size={24}
               />
 
               <Text
                 style={{
-                  color: isFocused ? '#2D5381' : 'gray',
+                  color: isFocused ? '#2D5381' : '#a6a6a6',
                   fontSize: 10,
                   marginTop: 1,
                   textTransform: 'capitalize',

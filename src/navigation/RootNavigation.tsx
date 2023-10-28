@@ -1,18 +1,20 @@
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import {StatusBar} from 'react-native';
-import {navigationRef} from './NavigationService';
-import AuthNavigator from './navigators/AuthNavigator';
+import {useSelector} from 'react-redux';
+import {getAuthEnableSignIn} from '../redux/selectors/auth.selector';
+import {NavigationService, navigationRef} from './NavigationService';
 import AppNavigator from './navigators/AppNavigator';
+import AuthNavigator from './navigators/AuthNavigator';
+import {useAppSelector} from '../hooks';
 
 const RootNavigation: React.FC = () => {
-  // const enableSignIn: boolean = useSelector(getAuthEnableSignIn);
+  const enableSignIn: boolean = useAppSelector(getAuthEnableSignIn);
 
   return (
     <NavigationContainer ref={navigationRef}>
       <StatusBar animated={true} showHideTransition={'slide'} />
-      {/* {enableSignIn ? <AppNavigator /> : <AuthNavigator />} */}
-      <AuthNavigator />
+      {enableSignIn ? <AppNavigator /> : <AuthNavigator />}
     </NavigationContainer>
   );
 };
