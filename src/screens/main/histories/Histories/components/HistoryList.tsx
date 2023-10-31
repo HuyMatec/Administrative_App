@@ -8,7 +8,8 @@ import {
   ListRenderItemInfo,
 } from 'react-native';
 import React from 'react';
-import {DataProps} from '../conts';
+import {DataProps} from '../../../histories/Histories/types';
+import { fontFamilySetup } from '../../../../../utils/font';
 
 const Data: DataProps[] = [
   {
@@ -82,14 +83,14 @@ const HistoryList = () => {
     );
   };
   return (
-    <View>
       <FlatList
         data={Data}
         keyExtractor={item => item.id.toString()}
         renderItem={renderItem}
-        showsHorizontalScrollIndicator={false}
+        showsVerticalScrollIndicator={false}
+        horizontal={false}
+        style={{width: '100%'}}
       />
-    </View>
   );
 };
 
@@ -116,15 +117,17 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 14,
     lineHeight: 21,
-    fontWeight: '600',
     color: '#000',
     marginBottom: 13,
+    fontWeight: '700',
+    fontFamily:fontFamilySetup.Poppins_SemiBold
   },
   receiver: {
     fontSize: 12,
     lineHeight: 18,
     fontWeight: '400',
     color: '#000',
+    fontFamily:fontFamilySetup.Poppins_Regular
   },
   timeContainer: {
     flexDirection: 'row',
@@ -138,6 +141,7 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     color: '#000',
     marginRight: 20,
+    fontFamily:fontFamilySetup.Poppins_Regular
   },
   image: {
     width: 50,
