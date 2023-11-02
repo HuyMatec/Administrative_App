@@ -109,7 +109,7 @@ const BottomNavigator: FunctionComponent = () => {
                   color: isFocused ? '#2D5381' : '#a6a6a6',
                   fontSize: 10,
                   marginTop: 1,
-                  textTransform: 'capitalize',
+                  textTransform: 'none',
                 }}>
                 {route.name}
               </Text>

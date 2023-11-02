@@ -1,12 +1,15 @@
-import {GoogleSignin} from '@react-native-google-signin/google-signin';
-import {Button} from '@rneui/themed';
-import React from 'react';
-import {View} from 'react-native';
-import {routes} from '../../../constants';
-import {NavigationService} from '../../../navigation';
 import auth from '@react-native-firebase/auth';
-import useStyles from './styles';
+import {GoogleSignin} from '@react-native-google-signin/google-signin';
+import React from 'react';
+import {Alert, TouchableOpacity, View} from 'react-native';
+import {SelectList} from 'react-native-dropdown-select-list';
+import {FPT_Logo_Image, Google_Logo_Image} from '../../../assets/svg';
 import {useAppDispatch} from '../../../hooks';
+import useStyles from './styles';
+import {data} from './types';
+import {Text} from 'react-native';
+import Item from './components/RenderItem/Item';
+import {Button} from 'react-native';
 import {AuthActions} from '../../../redux';
 
 const SignInScreen: React.FC = () => {
@@ -29,15 +32,31 @@ const SignInScreen: React.FC = () => {
   const styles = useStyles();
 
   return (
-    <View>
-      <Button
-        title="Google Sign-In"
-        onPress={() => {
-          onGoogleButtonPress().then(() => {
-            return dispatch(AuthActions.handleLogin());
-          });
-        }}
-      />
+    <View style={styles.container}>
+      <View style={styles.view1} />
+      <View style={styles.viewBackground}>
+        <View style={styles.viewBackroundMain}>
+          <View>
+            <FPT_Logo_Image />
+          </View>
+          <View style={styles.viewBackgroundItem}>
+            <Item />
+          </View>
+          <TouchableOpacity
+            style={styles.viewBtnGoogle}
+            onPress={() => {
+              onGoogleButtonPress().then(() => {
+                return dispatch(AuthActions.handleLogin());
+              });
+            }}>
+            <View style={{flexDirection: 'row'}}>
+              <Google_Logo_Image />
+              <Text style={styles.textGoogle}>Google</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+      </View>
+      <View style={{flex: 2}} />
     </View>
   );
 };
