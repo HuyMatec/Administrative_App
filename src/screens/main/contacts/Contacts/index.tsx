@@ -3,12 +3,13 @@ import React from 'react';
 import {FlatList, TouchableOpacity} from 'react-native-gesture-handler';
 import {DataProps, contacts} from './types';
 import {styles} from './styles';
-import {useNavigation} from '@react-navigation/native';
+import { NavigationService } from "../../../../navigation";
 
 const ContactsScreen = () => {
   const renderItem = ({index, item}: ListRenderItemInfo<DataProps>) => {
     const onClick = () => {
-      Alert.alert('Thông tin '+item.id, item.name);
+      // Alert.alert('Thông tin '+item.id, item.name);
+      NavigationService.navigate("CONTACTS_DETAIL", {item})
     };
     return (
       <TouchableOpacity onPress={onClick}>
@@ -39,7 +40,7 @@ const ContactsScreen = () => {
           <View key={contactGroup.content}>
             <Text style={styles.content}>{contactGroup.content}</Text>
             <FlatList
-              data={contactGroup.contentdata}
+              data={contactGroup.contentData}
               keyExtractor={item => item.id.toString()}
               renderItem={renderItem}
               showsVerticalScrollIndicator={false}
