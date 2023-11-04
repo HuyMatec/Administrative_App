@@ -1,5 +1,3 @@
-import {routes} from '../../constants';
-import {Contacts, Histories, Home, Settings} from '../../screens/main';
 import {
   BottomTabBarProps,
   BottomTabNavigationOptions,
@@ -9,7 +7,8 @@ import {Icon} from '@rneui/base';
 import {Text, makeStyles, normalize} from '@rneui/themed';
 import React, {FunctionComponent} from 'react';
 import {TouchableOpacity, View} from 'react-native';
-import {NavigationService} from '../NavigationService';
+import {routes} from '../../constants';
+import {Contacts, Histories, Home, Settings} from '../../screens/main';
 
 const BottomTabs = createBottomTabNavigator();
 

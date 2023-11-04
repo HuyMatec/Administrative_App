@@ -13,8 +13,12 @@ const reducer = createSlice({
   name: Redux.auth,
   initialState,
   reducers: {
-    handleLogin: (state: AuthState) => {
-      return {...state, enableSignIn: true};
+    handleLoginGoogle: (state: AuthState) => {
+      return {
+        ...state,
+        enableSignIn: true,
+        user: {},
+      };
     },
 
     handleLoginSuccess: (
@@ -27,28 +31,12 @@ const reducer = createSlice({
       };
     },
 
-    handleLoginGoogle: (state: AuthState, _: PayloadAction<LoginPayload>) => {
-      return {
-        ...state,
-        enableSignIn: true,
-        accessToken: '',
-        refreshToken: '',
-        enableBiometric: false,
-        user: {},
-        isGoogle: true,
-      };
-    },
-
     //logout
-    handleLogout: (state: AuthState) => {
+    handleLogoutGoogle: (state: AuthState) => {
       return {
         ...state,
         enableSignIn: false,
-        accessToken: '',
-        refreshToken: '',
-        enableBiometric: false,
         user: {},
-        isGoogle: false,
       };
     },
 

@@ -20,8 +20,7 @@ const useStyles = makeStyles(() => ({
     alignItems: 'center',
   },
   viewiconLeft: {
-    justifyContent: 'center',
-    alignItems: 'center',
+    marginTop: normalize(4),
   },
   viewTextLeft: {
     justifyContent: 'center',

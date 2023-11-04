@@ -25,12 +25,12 @@ const useStyles = makeStyles(() => ({
   view2: {
     flex: 4,
     width: '100%',
-    height: '100%',
+    height: normalize(HEIGHT * 0.8),
     backgroundColor: '#FFFFFF',
     borderRadius: normalize(20),
-    top: normalize(130),
+    top: normalize(HEIGHT * 0.19),
     position: 'absolute',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
   },
   view3: {
@@ -61,8 +61,8 @@ const useStyles = makeStyles(() => ({
     color: 'black',
     fontSize: normalize(23),
     fontWeight: 'bold',
-    marginTop: normalize(-290),
-    marginBottom: normalize(30),
+    marginTop: normalize(HEIGHT * 0.05),
+    marginBottom: normalize(HEIGHT * 0.05),
   },
   textND: {
     marginLeft: normalize(30),

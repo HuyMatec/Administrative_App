@@ -38,7 +38,11 @@ const HomeScreen = () => {
           <Icon name="create" color={'#2D5381'} type="ionicon" size={36} />
           <Text style={styles.textND}>Báo cáo sự cố</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.view3}>
+        <TouchableOpacity
+          style={styles.view3}
+          onPress={() => {
+            NavigationService.navigate(routes.REQUEST_SUPORT);
+          }}>
           <Icon
             name="logo-ionitron"
             color={'#2D5381'}

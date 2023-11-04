@@ -9,19 +9,13 @@ const SettingsScreen = () => {
   const dispatch = useAppDispatch();
 
   async function onGoogleSignOutButtonPress() {
+    dispatch(AuthActions.handleLogoutGoogle());
     return GoogleSignin.signOut();
   }
 
   return (
     <View>
-      <Button
-        title="Google Sign-Out"
-        onPress={() =>
-          onGoogleSignOutButtonPress().then(() => {
-            return dispatch(AuthActions.handleLogout());
-          })
-        }
-      />
+      <Button title="Google Sign-Out" onPress={onGoogleSignOutButtonPress} />
     </View>
   );
 };

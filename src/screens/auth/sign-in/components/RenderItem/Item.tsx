@@ -1,4 +1,4 @@
-import {View, Text} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {SelectList} from 'react-native-dropdown-select-list';
 import {SafeAreaView} from 'react-native';
@@ -21,6 +21,13 @@ const Item = () => {
         search={false}
         boxStyles={styles.viewBox}
         dropdownTextStyles={styles.viewItem}
+        onSelect={() => {
+          return (
+            <TouchableOpacity>
+              <Text>Xác nhận</Text>
+            </TouchableOpacity>
+          );
+        }}
       />
     </SafeAreaView>
   );
