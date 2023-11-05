@@ -5,7 +5,7 @@ import {Provider} from 'react-redux';
 import {store} from './src/redux/store';
 import {ThemeContext} from '@rneui/themed';
 import {GoogleSignin} from '@react-native-google-signin/google-signin';
-import DetailContact from './src/screens/main/contacts/Contacts/DetailContact';
+import DetailContact from './src/screens/personnel/ContactScreen/DetailContact';
 
 const App: React.FC = () => {
   GoogleSignin.configure({

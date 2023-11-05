@@ -3,7 +3,7 @@ import React from 'react';
 import {FlatList, TouchableOpacity} from 'react-native-gesture-handler';
 import {DataProps, contacts} from './types';
 import {styles} from './styles';
-import { NavigationService } from "../../../../navigation";
+import { NavigationService } from "../../../navigation";
 
 const ContactsScreen = () => {
   const renderItem = ({index, item}: ListRenderItemInfo<DataProps>) => {

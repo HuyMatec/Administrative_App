@@ -8,8 +8,8 @@ import {
   ListRenderItemInfo,
 } from 'react-native';
 import React from 'react';
-import {DataProps} from '../../../histories/Histories/types';
-import { fontFamilySetup } from '../../../../../utils/font';
+import {DataProps} from '../types';
+import { fontFamilySetup } from '../../../../utils/font';
 
 const Data: DataProps[] = [
   {

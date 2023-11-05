@@ -1,18 +1,13 @@
 import {routes} from '../../../constants';
 import {Screen} from '../../../types/screen';
-import ContactsScreen from './Contacts';
-import DetailContact from './Contacts/DetailContact';
+import ContactsScreen from '../../personnel/ContactScreen';
+import DetailContact from '../../personnel/ContactScreen/DetailContact';
 
-export {default as Contacts} from './Contacts';
+export {default as Contacts} from '../../personnel/ContactScreen';
 
 export const contactsScreens: Screen[] = [
   {
     name: routes.CONTACTS,
     component: ContactsScreen,
   },
-  {
-    name: routes.CONTACTS_DETAIL,
-    component: DetailContact,
-  },
-  
 ];

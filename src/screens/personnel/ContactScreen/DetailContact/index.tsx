@@ -4,7 +4,7 @@ import {styles} from './styles';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import { useRoute } from "@react-navigation/native";
 import { DataProps } from "../types";
-import { NavigationService } from "../../../../../navigation";
+import { NavigationService } from "../../../../navigation";
 
 const DetailContact = () => {
   const params =  useRoute().params as {item: DataProps};
