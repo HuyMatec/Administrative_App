@@ -10,21 +10,26 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <View style={{flex: 1, backgroundColor: '#2D5381'}}>
+      <View style={styles.body}>
         <View style={styles.view1}>
           <Image
             source={{
-              uri: 'https://openbookings.co.za/wp-content/uploads/Hi-Profile-V3.jpg',
+              uri: 'https://cdn3d.iconscout.com/3d/premium/thumb/colombian-people-9437719-7665524.png?f=webp',
             }}
             style={styles.viewImage}
           />
           <Text style={styles.textFullName}>Nguyễn Văn A</Text>
-          <Icon
-            name="notifications-outline"
-            type="ionicon"
-            color={'white'}
-            size={24}
-          />
+          <TouchableOpacity
+            onPress={() => {
+              NavigationService.navigate(routes.NOTIFICATIONS);
+            }}>
+            <Icon
+              name="notifications-outline"
+              type="ionicon"
+              color={'white'}
+              size={24}
+            />
+          </TouchableOpacity>
         </View>
       </View>
 

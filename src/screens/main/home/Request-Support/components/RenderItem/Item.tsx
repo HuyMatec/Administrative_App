@@ -16,14 +16,14 @@ const Item = () => {
       <Timeline
         data={data}
         showTime={false}
-        listViewContainerStyle={{marginTop: 20}}
+        listViewContainerStyle={styles.listView}
         circleSize={48}
         circleColor="#fff"
         separator={true}
         lineColor="#e6e6e6e6"
         lineWidth={5}
-        titleStyle={{color: '#000000', fontSize: 14, marginLeft: 30}}
-        descriptionStyle={{color: '#000000', fontSize: 12, marginLeft: 30}}
+        titleStyle={styles.title}
+        descriptionStyle={styles.description}
         innerCircle="icon"
       />
     </View>

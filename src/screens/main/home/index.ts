@@ -1,6 +1,7 @@
 import {routes} from '../../../constants';
 import {Screen} from '../../../types/screen';
 import HomeScreen from './Home';
+import NotificationsScreen from './Notifications';
 import ReportProblemScreen from './Report-Problem';
 import RequestSupportScreen from './Request-Support';
 
@@ -10,6 +11,10 @@ export const homeScreens: Screen[] = [
   {
     name: routes.HOME,
     component: HomeScreen,
+  },
+  {
+    name: routes.NOTIFICATIONS,
+    component: NotificationsScreen,
   },
   {
     name: routes.REPORT_PROBLEM,

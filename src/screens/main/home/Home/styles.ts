@@ -9,6 +9,10 @@ const useStyles = makeStyles(() => ({
   container: {
     flex: 5,
   },
+  body: {
+    flex: 1,
+    backgroundColor: '#2D5381',
+  },
   wrapper: {
     ...StyleSheet.absoluteFillObject,
   },
@@ -47,6 +51,7 @@ const useStyles = makeStyles(() => ({
   viewImage: {
     width: normalize(48),
     height: normalize(48),
+    backgroundColor: '#FFF',
     borderRadius: normalize(100),
   },
   textFullName: {

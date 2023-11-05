@@ -80,5 +80,18 @@ const useStyles = makeStyles(() => ({
     fontSize: normalize(14),
     fontWeight: 'bold',
   },
+  listView: {
+    marginTop: normalize(20),
+  },
+  title: {
+    color: '#000000',
+    fontSize: normalize(14),
+    marginLeft: normalize(30),
+  },
+  description: {
+    color: '#000000',
+    fontSize: normalize(12),
+    marginLeft: normalize(30),
+  },
 }));
 export default useStyles;
