@@ -4,7 +4,7 @@ import { styles } from './styles';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import HistoryList from './components/HistoryList';
 
-const HistoriesScreen = () => {
+const HistoryScreen = () => {
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor="#2D5381" />
@@ -31,4 +31,4 @@ const HistoriesScreen = () => {
   );
 };
 
-export default HistoriesScreen;
+export default HistoryScreen;

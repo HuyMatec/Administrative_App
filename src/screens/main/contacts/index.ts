@@ -1,9 +1,7 @@
 import {routes} from '../../../constants';
 import {Screen} from '../../../types/screen';
-import ContactsScreen from '../../personnel/ContactScreen';
-import DetailContact from '../../personnel/ContactScreen/DetailContact';
-
-export {default as Contacts} from '../../personnel/ContactScreen';
+import ContactsScreen from './Contacts';
+export {default as Contacts} from '../contacts/Contacts';
 
 export const contactsScreens: Screen[] = [
   {

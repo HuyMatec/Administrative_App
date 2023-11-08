@@ -1,8 +1,8 @@
 import {routes} from '../../../constants';
 import {Screen} from '../../../types/screen';
-import HistoriesScreen from '../../personnel/HistoryScreen';
+import HistoriesScreen from '../histories/Histories';
 
-export {default as Histories} from '../../personnel/HistoryScreen';
+export {default as Histories} from '../histories/Histories';
 
 export const historiesScreens: Screen[] = [
   {
