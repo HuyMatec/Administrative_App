@@ -1,10 +1,10 @@
 import auth from '@react-native-firebase/auth';
-import { GoogleSignin } from '@react-native-google-signin/google-signin';
+import {GoogleSignin} from '@react-native-google-signin/google-signin';
 import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
-import { FPT, Google } from '../../../assets/svg';
-import { useAppDispatch } from '../../../hooks';
-import { AuthActions } from '../../../redux';
+import {Text, TouchableOpacity, View} from 'react-native';
+import {FPT, Google} from '../../../assets/svg';
+import {useAppDispatch} from '../../../hooks';
+import {AuthActions} from '../../../redux';
 import Item from './components/RenderItem/Item';
 import useStyles from './styles';
 
