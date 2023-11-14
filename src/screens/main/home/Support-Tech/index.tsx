@@ -18,7 +18,7 @@ import Item from './components/RenderItem/Item';
 import useStyles from './styles';
 import {routes} from '../../../../constants';
 
-const ReportProblemScreen = () => {
+const SupportTechScreen = () => {
   const styles = useStyles();
 
   const [selectImageCamera, setSelectImageCamera] = useState('');
@@ -143,7 +143,7 @@ const ReportProblemScreen = () => {
           onPressLeftIcon={() => {
             NavigationService.goBack();
           }}
-          title="Báo cáo sự cố"
+          title="Yêu cầu hỗ trợ CNTT"
         />
         <ScrollView
           showsVerticalScrollIndicator={false}
@@ -209,7 +209,7 @@ const ReportProblemScreen = () => {
             <TouchableOpacity
               style={styles.viewBtnGYC}
               onPress={() => {
-                NavigationService.navigate(routes.REQUEST_INCIDENT_SUPPORT);
+                NavigationService.navigate(routes.REQUEST_TECH_SUPPORT);
               }}>
               <Text style={styles.textGYC}>Gửi yêu cầu</Text>
             </TouchableOpacity>
@@ -220,4 +220,4 @@ const ReportProblemScreen = () => {
   );
 };
 
-export default ReportProblemScreen;
+export default SupportTechScreen;

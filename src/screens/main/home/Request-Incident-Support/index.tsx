@@ -5,7 +5,7 @@ import {NavigationService} from '../../../../navigation';
 import Item from './components/RenderItem/Item';
 import useStyles from './styles';
 
-const RequestSupportScreen = () => {
+const RequestIncidentSupportScreen = () => {
   const styles = useStyles();
 
   return (
@@ -65,4 +65,4 @@ const RequestSupportScreen = () => {
   );
 };
 
-export default RequestSupportScreen;
+export default RequestIncidentSupportScreen;

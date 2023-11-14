@@ -46,7 +46,7 @@ const HomeScreen = () => {
         <TouchableOpacity
           style={styles.view3}
           onPress={() => {
-            NavigationService.navigate(routes.REQUEST_SUPORT);
+            NavigationService.navigate(routes.SUPPORT_TECH);
           }}>
           <Icon
             name="logo-ionitron"

@@ -1,8 +1,6 @@
-import {View, Text, Image, TouchableOpacity} from 'react-native';
-import React from 'react';
-import {NavigationService} from '../../../../navigation';
-import {routes} from '../../../../constants';
 import {Icon} from '@rneui/themed';
+import React from 'react';
+import {Image, Text, TouchableOpacity, View} from 'react-native';
 import useStyles from './styles';
 
 const ContactsScreen = () => {
