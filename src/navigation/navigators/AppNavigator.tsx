@@ -9,7 +9,10 @@ import {routes} from '../../constants';
 import {
   contactsScreens,
   historiesScreens,
+  historyScreens,
+  homeScreen,
   homeScreens,
+  settingScreens,
   settingsScreens,
 } from '../../screens/main';
 import BottomNavigator from './BottomNavigator';
@@ -26,10 +29,13 @@ const mainScreens: Screen[] = [
     name: routes.BOTTOM_TAB,
     component: BottomNavigator,
   },
-  ...homeScreens,
-  ...historiesScreens,
-  ...contactsScreens,
-  ...settingsScreens,
+  // ...homeScreens,
+  // ...historiesScreens,
+  // ...contactsScreens,
+  // ...settingsScreens,
+  ...homeScreen,
+  ...historyScreens,
+  ...settingScreens,
 ];
 
 const AppNavigator = () => {

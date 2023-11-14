@@ -5,7 +5,7 @@ export {default as SettingScreen} from './SettingScreen';
 
 export const settingScreens: Screen[] = [
   {
-    name: routes.SETTINGS,
+    name: routes.PERSONNELSETTINGS,
     component: SettingScreen,
   },
 

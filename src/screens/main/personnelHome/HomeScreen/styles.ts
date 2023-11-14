@@ -7,7 +7,7 @@ const HEIGHT = Device.getDeviceHeight();
 
 const useStyles = makeStyles(() => ({
   container: {
-    flex: 5,
+    flex: 1,
   },
   body: {
     flex: 1,
@@ -23,16 +23,16 @@ const useStyles = makeStyles(() => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     position: 'absolute',
-    top: normalize(69),
+    top: normalize(20),
     left: normalize(16),
   },
   view2: {
-    flex: 4,
+    flex: 1,
     width: '100%',
-    height: normalize(HEIGHT * 0.8),
+    height: normalize(HEIGHT),
     backgroundColor: '#FFFFFF',
     borderRadius: normalize(20),
-    top: normalize(HEIGHT * 0.19),
+    top: normalize(HEIGHT * 0.12),
     position: 'absolute',
     justifyContent: 'flex-start',
     alignItems: 'center',

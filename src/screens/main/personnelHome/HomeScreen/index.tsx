@@ -1,6 +1,6 @@
 import {Icon} from '@rneui/themed';
 import React from 'react';
-import {Image, Text, TouchableOpacity, View} from 'react-native';
+import {Image, Text, TouchableOpacity, View, StatusBar} from 'react-native';
 import useStyles from './styles';
 import {NavigationService} from '../../../../navigation';
 import {routes} from '../../../../constants';
@@ -10,15 +10,16 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
+      <StatusBar barStyle="light-content" backgroundColor="#2D5381" />
       <View style={styles.body}>
         <View style={styles.view1}>
           <Image
             source={{
-              uri: 'https://cdn3d.iconscout.com/3d/premium/thumb/colombian-people-9437719-7665524.png?f=webp',
+              uri: 'https://www.nhaban.vn/gallery.nb/estates/5259229/medium/29_62fa079ca892b.jpg',
             }}
             style={styles.viewImage}
           />
-          <Text style={styles.textFullName}>Nguyễn Văn A</Text>
+          <Text style={styles.textFullName}>Nguyễn Trung Hải</Text>
           <TouchableOpacity
             onPress={() => {
               NavigationService.navigate(routes.NOTIFICATIONS);
@@ -38,28 +39,19 @@ const HomeScreen = () => {
         <TouchableOpacity
           style={styles.view3}
           onPress={() => {
-            NavigationService.navigate(routes.REPORT_PROBLEM);
+            NavigationService.navigate(routes.SUPPORT_PROBLEM);
           }}>
           <Icon name="create" color={'#2D5381'} type="ionicon" size={36} />
-          <Text style={styles.textND}>Báo cáo sự cố</Text>
+          <Text style={styles.textND}>Sự cố cần hỗ trợ</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.view3}
           onPress={() => {
-            NavigationService.navigate(routes.REQUEST_SUPORT);
+            NavigationService.navigate(routes.CLASSROOMS);
           }}>
-          <Icon
-            name="logo-ionitron"
-            color={'#2D5381'}
-            type="ionicon"
-            size={36}
-          />
-          <Text style={styles.textND}>Yêu cầu hỗ trợ CNTT</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.view3}>
           <Icon name="grid" color={'#2D5381'} type="ionicon" size={36} />
           <Text style={[styles.textND, {width: 200}]}>
-            Quản lý mượn phòng học, hội trường
+            Tính sẵn sàng phòng học
           </Text>
         </TouchableOpacity>
       </View>

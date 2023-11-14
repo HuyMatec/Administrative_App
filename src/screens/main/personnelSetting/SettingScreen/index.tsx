@@ -1,6 +1,6 @@
 import {GoogleSignin} from '@react-native-google-signin/google-signin';
 import React, {useState} from 'react';
-import {Image, Text, TouchableOpacity, View} from 'react-native';
+import {Image, Text, TouchableOpacity, View ,StatusBar} from 'react-native';
 import {useAppDispatch} from '../../../../hooks';
 import {AuthActions} from '../../../../redux';
 import useStyles from './styles';
@@ -13,24 +13,21 @@ const SettingScreen = () => {
     dispatch(AuthActions.handleLogoutGoogle());
     return GoogleSignin.signOut();
   }
-
-  const [isEnabled, setIsEnabled] = useState(false);
-  const toggleSwitch = () => setIsEnabled(previousState => !previousState);
-
   const styles = useStyles();
 
   return (
     <View style={styles.container}>
+      <StatusBar barStyle="light-content" backgroundColor="#2D5381" />
       <View style={styles.body}>
         <View style={styles.view1}>
           <View style={styles.viewCenter}>
             <Image
               source={{
-                uri: 'https://cdn3d.iconscout.com/3d/premium/thumb/colombian-people-9437719-7665524.png?f=webp',
+                uri: 'https://www.nhaban.vn/gallery.nb/estates/5259229/medium/29_62fa079ca892b.jpg',
               }}
               style={styles.viewImage}
             />
-            <Text style={styles.textFullName}>Nguyễn Văn A</Text>
+            <Text style={styles.textFullName}>Nguyễn Trung Hải</Text>
             <Text style={styles.textPosition}>0797151033</Text>
           </View>
         </View>
@@ -59,26 +56,6 @@ const SettingScreen = () => {
               />
             </TouchableOpacity>
           </TouchableOpacity>
-        </View>
-        <View>
-          <View style={[styles.viewRow, styles.viewItem]}>
-            <Icon
-              name="notifications-outline"
-              type="ionicon"
-              size={24}
-              color={'#000000'}
-              style={styles.icon}
-            />
-            <View style={{flex: 3}}>
-              <Text style={styles.text}>Tắt thông báo</Text>
-            </View>
-            <TouchableOpacity
-              style={[styles.outter, isEnabled ? styles.off : styles.on]}
-              onPress={toggleSwitch}
-              activeOpacity={3}>
-              <View style={isEnabled ? styles.innerOFF : styles.innerON} />
-            </TouchableOpacity>
-          </View>
         </View>
         <View>
           <TouchableOpacity

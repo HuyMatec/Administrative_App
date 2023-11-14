@@ -8,7 +8,7 @@ import {Text, makeStyles, normalize} from '@rneui/themed';
 import React, {FunctionComponent} from 'react';
 import {TouchableOpacity, View} from 'react-native';
 import {routes} from '../../constants';
-import {Contacts, Histories, Home, Settings} from '../../screens/main';
+import {Contacts, Histories, HistoryScreen, Home, HomeScreen, SettingScreen, Settings, homeScreen} from '../../screens/main';
 
 const BottomTabs = createBottomTabNavigator();
 
@@ -23,8 +23,8 @@ const choseIcon = (route: routes) => {
       return 'home-sharp';
     case routes.HISTORIES:
       return 'refresh-sharp';
-    case routes.CONTACTS:
-      return 'call-sharp';
+    // case routes.CONTACTS:
+    //   return 'call-sharp';
     case routes.SETTINGS:
       return 'settings-sharp';
     default:
@@ -123,10 +123,10 @@ const BottomNavigator: FunctionComponent = () => {
     <BottomTabs.Navigator
       screenOptions={screenOptions}
       tabBar={(props: BottomTabBarProps) => <Tab {...props} />}>
-      <BottomTabs.Screen name={routes.HOME} component={Home} />
-      <BottomTabs.Screen name={routes.HISTORIES} component={Histories} />
-      <BottomTabs.Screen name={routes.CONTACTS} component={Contacts} />
-      <BottomTabs.Screen name={routes.SETTINGS} component={Settings} />
+      <BottomTabs.Screen name={routes.PERSONNELHOME} component={HomeScreen} />
+      <BottomTabs.Screen name={routes.PERSONNELHISTORIES} component={HistoryScreen} />
+      {/* <BottomTabs.Screen name={routes.CONTACTS} component={Contacts} /> */}
+      <BottomTabs.Screen name={routes.PERSONNELSETTINGS} component={SettingScreen} />
     </BottomTabs.Navigator>
   );
 };
