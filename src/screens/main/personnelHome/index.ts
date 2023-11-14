@@ -1,7 +1,9 @@
 import {routes} from '../../../constants';
 import {Screen} from '../../../types/screen';
+import BuildingScreen from './BuildingScreen';
 import ClassroomScreen from './ClassroomScreen';
 import DetailSupportScreen from './DetailSupport';
+import FloorScreen from './FloorScreen';
 import HomeScreen from './HomeScreen';
 import SupportScreen from './SupportScreen';
 
@@ -23,5 +25,13 @@ export const homeScreen: Screen[] = [
   {
     name: routes.DETAIL_SUPPORT,
     component: DetailSupportScreen,
+  },
+  {
+    name: routes.BUILDINGSCREEN,
+    component: BuildingScreen,
+  },
+  {
+    name: routes.FLOORSCREEN,
+    component: FloorScreen,
   }
 ];

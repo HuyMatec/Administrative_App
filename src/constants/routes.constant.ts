@@ -10,8 +10,14 @@ export enum routes {
   CONTACTS = 'Liên hệ',
   SETTINGS = 'Cài đặt',
 
-  PERSONNELHOME = 'Trang chủ', CLASSROOMS = 'Tính sẵn sàng phòng học', SUPPORT_PROBLEM = 'Sự cố cần hỗ trợ',DETAIL_SUPPORT = 'Chi tiết sự cố',
-  PERSONNELHISTORIES = 'Lịch sử', SUPPORTHISTORIES = 'Lịch sử hỗ trợ',
+  PERSONNELHOME = 'Trang chủ', 
+  CLASSROOMS = 'Tính sẵn sàng phòng học', 
+  SUPPORT_PROBLEM = 'Sự cố cần hỗ trợ', 
+  DETAIL_SUPPORT = 'Chi tiết sự cố', 
+  BUILDINGSCREEN = 'Tòa nhà',
+  FLOORSCREEN = 'Các tầng',
+  PERSONNELHISTORIES = 'Lịch sử', 
+  SUPPORTHISTORIES = 'Lịch sử hỗ trợ',
   PERSONNELSETTINGS = 'Cài đặt',
 
 }

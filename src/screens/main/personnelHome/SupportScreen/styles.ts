@@ -37,12 +37,24 @@ const useStyles = makeStyles(() => ({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  view5: {
+    width:normalize(WIDTH * 0.5),
+    height: normalize(HEIGHT * 0.05),
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: normalize(10),
+    borderBottomWidth: 1
+  },
   text1: {
     color: '#4169E1',
     fontSize: normalize(12),
     fontWeight: 'bold',
   },
-
+  text2: {
+    color: '#B3C3F3',
+    fontSize: normalize(12),
+    fontWeight: 'bold',
+  },
   ViewItem: {
     backgroundColor: '#ffffff',
     borderRadius: normalize(10),

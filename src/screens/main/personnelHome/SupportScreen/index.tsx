@@ -89,14 +89,14 @@ const SupportScreen = () => {
       <View style={styles.view2}>
         <View style={styles.view3}>
           <TouchableOpacity
-            style={styles.view4}
+            style={currentTab === 'unreceive' ? styles.view4 : styles.view5}
             onPress={() => setCurrentTab('unreceive')}>
-            <Text style={styles.text1}>Sự cố hiện có</Text>
+            <Text style={currentTab === 'unreceive' ? styles.text1 : styles.text2}>Sự cố hiện có</Text>
           </TouchableOpacity>
           <TouchableOpacity
-            style={styles.view4}
+            style={currentTab === 'unreceive' ? styles.view5 : styles.view4}
             onPress={() => setCurrentTab('receive')}>
-            <Text style={styles.text1}>Đang tiếp nhận</Text>
+            <Text style={currentTab === 'receive' ? styles.text1 : styles.text2}>Đang tiếp nhận</Text>
           </TouchableOpacity>
         </View>
         <FlatList

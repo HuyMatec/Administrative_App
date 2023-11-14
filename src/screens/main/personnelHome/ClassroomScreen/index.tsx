@@ -39,7 +39,7 @@ const ClassroomScreen = () => {
         <View style={styles.view2}>
           <TouchableOpacity
             onPress={() => {
-              NavigationService.navigate(routes.SUPPORT_PROBLEM);
+              NavigationService.navigate(routes.BUILDINGSCREEN);
             }}>
             <View style={[styles.view3, {backgroundColor: '#0D51A1'}]}>
               <View style={styles.viewText1}>
@@ -64,7 +64,7 @@ const ClassroomScreen = () => {
 
           <TouchableOpacity
             onPress={() => {
-              NavigationService.navigate(routes.SUPPORT_PROBLEM);
+              NavigationService.navigate(routes.BUILDINGSCREEN);
             }}>
             <View style={[styles.view3, {backgroundColor: '#F27125'}]}>
               <View style={styles.viewText1}>
@@ -89,7 +89,7 @@ const ClassroomScreen = () => {
 
           <TouchableOpacity
             onPress={() => {
-              NavigationService.navigate(routes.SUPPORT_PROBLEM);
+              NavigationService.navigate(routes.BUILDINGSCREEN);
             }}>
             <View style={[styles.view3, {backgroundColor: '#4EB849'}]}>
               <View style={styles.viewText1}>
