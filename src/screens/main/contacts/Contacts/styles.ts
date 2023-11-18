@@ -22,7 +22,7 @@ const useStyles = makeStyles(() => ({
     width: '100%',
     height: normalize(120),
     position: 'absolute',
-    top: normalize(HEIGHT * 0.099),
+    top: normalize(HEIGHT * 0.09),
   },
   view2: {
     width: '100%',
@@ -86,6 +86,59 @@ const useStyles = makeStyles(() => ({
     backgroundColor: '#e6e6e6',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  itemContact: {
+    height: normalize(69),
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginHorizontal: normalize(24),
+    marginVertical: normalize(6),
+    paddingHorizontal: normalize(12),
+    borderWidth: normalize(0.6),
+    borderRadius: normalize(16),
+    backgroundColor: 'rgba(224, 224, 224, 0.4)',
+  },
+  image: {
+    width: normalize(56),
+    height: normalize(56),
+    backgroundColor: 'white',
+    borderRadius: normalize(100),
+  },
+  textFN: {
+    fontSize: normalize(16),
+    color: '#000',
+    fontWeight: 'bold',
+    marginBottom: normalize(9),
+  },
+  textP: {
+    fontSize: normalize(13),
+    color: 'rgba(0, 0, 0, 0.32)',
+  },
+  textTitleRoom: {
+    fontSize: normalize(16),
+    color: 'rgba(0, 0, 0, 0.32)',
+    fontWeight: 'bold',
+    marginLeft: normalize(19),
+    marginBottom: normalize(19),
+  },
+  viewHeader: {
+    height: normalize(60),
+    backgroundColor: '#2D5381',
+  },
+  titleStyleHeader: {
+    fontSize: normalize(22),
+    fontWeight: 'normal',
+    color: 'white',
+  },
+  viewItem1: {
+    marginTop: normalize(12),
+    height: normalize(300),
+  },
+  viewHeight1: {
+    height: normalize(244),
+  },
+  viewHeight2: {
+    height: normalize(330),
   },
 }));
 export default useStyles;

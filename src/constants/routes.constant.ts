@@ -10,5 +10,6 @@ export enum routes {
   REQUEST_TECH_SUPPORT = 'Yêu cầu hỗ trợ công nghệ thông tin',
   HISTORIES = 'Lịch sử',
   CONTACTS = 'Liên hệ',
+  ITEM_CONTACT = 'ItemContact',
   SETTINGS = 'Cài đặt',
 }
